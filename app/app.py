@@ -2,8 +2,11 @@ import streamlit as st
 import joblib
 
 # Load model and vectorizer
-model = joblib.load("fake_job_classifier.pkl")
-vectorizer = joblib.load("tfidf_vectorizer.pkl")
+import os
+
+model = joblib.load(os.path.join(os.path.dirname(__file__), "fake_job_classifier.pkl"))
+vectorizer = joblib.load(os.path.join(os.path.dirname(__file__), "tfidf_vectorizer.pkl"))
+
 
 st.set_page_config(page_title="Fake Job Classifier", layout="centered")
 
