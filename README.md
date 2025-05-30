@@ -2,6 +2,20 @@
 
 This project detects fake job postings using machine learning and provides an interactive web interface using Streamlit.
 
+# Live Demo
+
+[Try the App](https://fake-job-classifier-d9bcrvavmswvkfhv6buwhp.streamlit.app/)
+
+Paste a job description and find out if it's likely **real** or **fake**.
+
+# Features
+
+- Classifies job descriptions as real or fake using an ML model
+- Trained on [Kaggle's Fake Job Postings Dataset](https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction)
+- Handles imbalanced data using SMOTE
+- AUC score: **0.96**
+- Built with: `scikit-learn`, `Streamlit`, `joblib`, `TF-IDF`
+- Includes a live keyword-based fraud alert system
 
 # Project Structure
 
@@ -48,7 +62,6 @@ README.md
 
 - Paste a job description and get a prediction (Real  / Fake )
 - Fast and responsive UI
-- Perfect for resumes and demo purposes
 
 #Try the App Live
 
