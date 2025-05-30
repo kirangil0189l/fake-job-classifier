@@ -50,6 +50,11 @@ README.md
 - Fast and responsive UI
 - Perfect for resumes and demo purposes
 
+#Try the App Live
+
+[Open Fake Job Detector](https://fake-job-classifier-d9bcrvavmswvkfhv6buwhp.streamlit.app/)
+
+Paste a job description to check if it’s real or fake using an ML model trained on real data!
 
 # Author
 
