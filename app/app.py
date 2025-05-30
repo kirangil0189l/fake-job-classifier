@@ -28,3 +28,8 @@ if st.button("Predict"):
             st.error("FAKE JOB DETECTED")
         else:
             st.success("REAL JOB POSTING")
+
+# Check for scammy keywords
+suspicious_keywords = ["gmail.com", "yahoo.com", "consultant.com", "no interview", "$75/hour"]
+if any(word in job_desc.lower() for word in suspicious_keywords):
+    st.warning("⚠️ This job post contains suspicious phrases that are often associated with scams.")
